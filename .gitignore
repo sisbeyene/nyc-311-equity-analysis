@@ -221,3 +221,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# ==================================================
+# NYC 311 Equity Analysis - Project-specific ignores
+# ==================================================
+
+# Raw and processed datasets
+data/raw/*
+data/processed/*
+data/external/*
+
+# Keep empty data directories in Git
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+
+# Environment variables and API credentials
+.env
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
